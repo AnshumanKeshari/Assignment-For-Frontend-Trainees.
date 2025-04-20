@@ -1,0 +1,24 @@
+To run the application, follow these steps:
+
+First, ensure all dependencies are installed:
+
+npm install
+
+Start the development server:
+
+npm run dev
+
+The application will start and be available at the local development URL. You can interact with the dashboard by:
+
+Adding new categories using the "Add Category" button
+Adding widgets to categories using the "Add Widget" button in each category
+Removing widgets using the X icon that appears when hovering over them
+Searching widgets using the search bar at the top
+Removing categories using the trash icon next to the category name
+The dashboard includes:
+
+Interactive donut charts for cloud accounts and risk assessment
+Progress bars for registry scan metrics
+Real-time search functionality
+Responsive layout that works on all screen sizes
+All data is managed locally using Redux for state management.
