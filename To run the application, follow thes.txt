@@ -1,24 +1,52 @@
-To run the application, follow these steps:
+Let me explain the code and how it works:
 
-First, ensure all dependencies are installed:
+The application is a dynamic dashboard built with React, Redux, and TypeScript. Here's a breakdown of the main components:
+
+Core Features:
+
+Dynamic widget management
+Category organization
+Real-time search
+Interactive charts and progress bars
+Modal-based widget and category creation
+Key Components:
+
+App.tsx: Main dashboard layout
+AddWidgetModal.tsx: Modal for adding new widgets
+AddCategoryModal.tsx: Modal for creating categories
+WidgetContent.tsx: Renders different widget types (charts, progress bars)
+SearchBar.tsx: Handles widget filtering
+State Management:
+
+Uses Redux for state management
+dashboardSlice.ts handles all dashboard operations
+Supports adding/removing widgets and categories
+Maintains search functionality
+Widget Types:
+
+Donut charts (using Chart.js)
+Progress bars
+Text content
+To run the application:
+
+Install dependencies:
 
 npm install
-
 Start the development server:
 
 npm run dev
+You can then:
 
-The application will start and be available at the local development URL. You can interact with the dashboard by:
+Add categories with the "Add Category" button
+Add widgets to categories using "Add Widget"
+Remove widgets with the X icon
+Search widgets using the search bar
+Delete categories with the trash icon
+The data structure uses a JSON format where each widget can have different types of content (charts, progress bars, or text), making it highly flexible and extensible.
 
-Adding new categories using the "Add Category" button
-Adding widgets to categories using the "Add Widget" button in each category
-Removing widgets using the X icon that appears when hovering over them
-Searching widgets using the search bar at the top
-Removing categories using the trash icon next to the category name
-The dashboard includes:
+The application is already set up with sample data showing:
 
-Interactive donut charts for cloud accounts and risk assessment
-Progress bars for registry scan metrics
-Real-time search functionality
-Responsive layout that works on all screen sizes
-All data is managed locally using Redux for state management.
+Cloud account statistics
+Risk assessment metrics
+Registry scan information
+All changes persist in the Redux store during the session, and the UI updates automatically when modifications are made.
